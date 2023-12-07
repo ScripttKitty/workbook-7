@@ -1,0 +1,10 @@
+USE northwind;
+-- Q1 SELECT companyName FROM suppliers;
+-- Q2 SELECT sum(salary) AS salarySum FROM employees;
+-- Q3 SELECT MIN(unitprice) AS lowestPrice FROM products;
+-- Q4 SELECT avg(unitprice) AS Avgprice FROM products;
+-- Q5 SELECT max(unitprice) AS maxPrice FROM products;
+-- Q6 SELECT supplierID, COUNT(*) AS NumberofItems FROM products GROUP BY supplierID;
+-- Q7 SELECT categoryID, avg(UnitPrice) AS avgPrice FROM Products GROUP BY categoryID;
+-- Q8 SELECT supplierID, COUNT(*) AS NumberOfItems FROM products GROUP BY supplierID HAVING COUNT(*) >= 5;
+-- Q9 SELECT productID, productName, unitPrice * unitsInStock AS InventoryValue FROM products ORDER BY InventoryValue DESC, productName;

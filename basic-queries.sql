@@ -1,0 +1,18 @@
+-- Q1: categories 
+-- USE Northwind;
+-- Q2 SELECT productID, productName, unitPrice FROM products;
+-- Q3 SELECT productID, productName, unitPrice FROM products ORDER BY unitPrice ASC;
+-- Q4 SELECT * FROM products WHERE unitPrice <= 7.50;
+-- Q5 SELECT * FROM products WHERE UnitsInStock >=100; 
+-- Q6 SELECT * FROM products WHERE UnitsInStock >= 100 ORDER BY UnitPrice DESC, ProductName ASC;
+-- Q7 SELECT * FROM products WHERE UnitsInStock = 0 AND UnitsOnOrder > 0 ORDER BY productName;
+-- Q8 categories 
+-- Q9 SELECT CategoryID FROM categories WHERE CategoryName = "seafood";
+-- Q10 SELECT productName FROM products WHERE CategoryID = "8";
+-- Q11 SELECT firstName, LastName FROM employees;
+-- Q12 SELECT Title FROM employees WHERE Title LIKE "%manager%";
+-- Q13 SELECT DISTINCT title FROM employees;
+-- Q14 SELECT * FROM employees WHERE salary BETWEEN 2000 AND 2500;
+-- Q15 SELECT * FROM suppliers;
+-- Q16  
+SELECT * 
