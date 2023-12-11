@@ -1,4 +1,4 @@
-CREATE DATABASE CarDealership;
+-- CREATE DATABASE CarDealership;
 USE CarDealership;
 
 CREATE TABLE dealerships (
@@ -37,3 +37,27 @@ CREATE TABLE sales_contracts(
     Foreign Key(vin) REFERENCES vehicles(vin)
 );
 
+-- Populating tables
+INSERT INTO dealerships (`name`, address, phone) 
+VALUES
+('Los Santos Custom', '000 Grove St', '555-5555'),
+('Bennys Customs', '123 Annie Ave', '555-6666'),
+('Rust Bros', '222 Maple St', '555-7777');
+
+INSERT INTO vehicles (vin, make, color, `year`, price, sold) 
+VALUES
+(1, 'Toyota Camry', 'Blue', 2022, 25000.00, FALSE),
+(2, 'Honda Accord', 'Red', 2021, 23000.00, TRUE),
+(3, 'Ford Mustang', 'Black', 1969, 35000.00, FALSE);
+
+INSERT INTO inventory (dealership_id, vin) 
+VALUES
+(1, 1),
+(1, 2),
+(2, 3),
+(3, 1);
+
+INSERT INTO sales_contracts (vin, date, price)
+VALUES
+(2, '2023-01-15', 22000.00),
+(3, '2023-02-20', 34000.00);
